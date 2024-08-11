@@ -8,6 +8,7 @@
         "command.player.loadItems.PlayerCommandMixin",
         "command.player.loadItems.ServerPlayerMixin",
         "feats.suppressionCount.PacketUtilsMixin",
+        "rule.stopLightRecalculationDataFix.ChunkDeleteLightFixMixin",
         "utils.customCriteria.ObjectiveCriteriaAccessor",
         "utils.customCriteria.ObjectiveCriteriaMixin",
         "utils.customCriteria.ScoreboardCommandMixin"

@@ -1,0 +1,6 @@
+{
+    "carpet.category.WaveTech": "WaveTech",
+
+    "carpet.rule.stopLightRecalculationDataFix.name": "Stop Light Recalculation DataFix",
+    "carpet.rule.stopLightRecalculationDataFix.desc": "Prevents the ChunkDeleteLightFix DataFix from erasing the light data out of <=1.19.4 chunks"
+}
