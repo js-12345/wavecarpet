@@ -37,10 +37,13 @@ public class PlayerCommandMixin {
 				return 0;
 
 			ServerPlayer player = getPlayer(context);
-			player.setLoadItems$wavecarpet(true);
+			player.setLoadItems$wavecarpet(!player.getLoadItems$wavecarpet());
 
 			context.getSource().sendSuccess(
-				() -> Component.literal("Enabled item loading for " + player.getDisplayName().getString()),
+				() -> Component.literal(
+					(player.getLoadItems$wavecarpet() ? "Enabled" : "Disabled")
+						+ " item loading for " + player.getDisplayName().getString()
+				),
 				false
 			);
 			return 1;
