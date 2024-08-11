@@ -17,7 +17,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class EntityPlayerActionPackMixin {
 	@Inject(method = "execute", at = @At(value = "RETURN", ordinal = 2))
 	private void loadItemsInBlock(ServerPlayer player, EntityPlayerActionPack.Action action, CallbackInfoReturnable<Boolean> cir, @Local BlockHitResult target) {
-		if (player.getLevel().getBlockEntity(target.getBlockPos()) instanceof Container container) {
+		if (player.level().getBlockEntity(target.getBlockPos()) instanceof Container container) {
 			transfer(player, container);
 		}
 	}

@@ -40,7 +40,7 @@ public class ContainerMerger {
 				continue;
 			}
 
-			if (ItemStack.isSameItemSameTags(sourceItemStack, targetItemStack)) {
+			if (ItemStack.isSameItemSameComponents(sourceItemStack, targetItemStack)) {
 				int stackSizeDiff = Math.min(sourceItemStack.getCount(), targetItemStack.getMaxStackSize() - targetItemStack.getCount());
 				sourceItemStack.shrink(stackSizeDiff);
 				targetItemStack.grow(stackSizeDiff);
