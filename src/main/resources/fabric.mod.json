@@ -5,7 +5,8 @@
     "name": "Wave Carpet",
     "description": "Additions to carpet by the WaveTech server",
     "authors": [
-        "VelizarBG"
+        "VelizarBG",
+        "KikuGie"
     ],
     "contact": {
         "repo": "https://github.com/VelizarBG/wavecarpet"
