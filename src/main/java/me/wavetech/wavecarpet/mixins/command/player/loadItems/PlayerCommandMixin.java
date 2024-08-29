@@ -28,7 +28,8 @@ public class PlayerCommandMixin {
 		at = @At(
 			value = "INVOKE",
 			target = "Lnet/minecraft/commands/Commands;argument(Ljava/lang/String;Lcom/mojang/brigadier/arguments/ArgumentType;)Lcom/mojang/brigadier/builder/RequiredArgumentBuilder;",
-			ordinal = 0
+			ordinal = 0,
+			remap = true
 		)
 	)
 	private static <T> RequiredArgumentBuilder<CommandSourceStack, T> insertLoadItemsParameter(RequiredArgumentBuilder<CommandSourceStack, T> original) {
