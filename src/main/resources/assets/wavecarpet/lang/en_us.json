@@ -5,6 +5,8 @@
     "carpet.rule.stopLightRecalculationDataFix.desc": "Prevents the ChunkDeleteLightFix DataFix from erasing the light data out of <=1.19.4 chunks",
     "carpet.rule.commandImportStatsToScoreboard.desc": "Enables /importstatstoscoreboard command",
     "carpet.rule.commandImportStatsToScoreboard.extra.0": "Imports player statistics into scoreboard objectives",
+    "carpet.rule.obtainableInvisibleItemFrames.name": "Obtainable Invisible Item Frames",
+    "carpet.rule.obtainableInvisibleItemFrames.desc": "Makes invisible item frames obtainable by renaming them to \"invisible\" in an anvil",
     "commands.importstatstoscoreboard.importing": "There is an ongoing importing procedure.",
     "commands.importstatstoscoreboard.success": "Started importing stats into objectives..."
 }
