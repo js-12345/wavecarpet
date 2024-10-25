@@ -16,4 +16,7 @@ public class WaveCarpetSettings {
 
 	@Rule(categories = { WAVETECH, SURVIVAL, FEATURE })
 	public static boolean obtainableInvisibleItemFrames = false;
+
+	@Rule(categories = { WAVETECH, CREATIVE })
+	public static boolean disableOpsBypassWhitelist = false;
 }

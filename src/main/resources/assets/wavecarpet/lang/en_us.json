@@ -7,6 +7,8 @@
     "carpet.rule.commandImportStatsToScoreboard.extra.0": "Imports player statistics into scoreboard objectives",
     "carpet.rule.obtainableInvisibleItemFrames.name": "Obtainable Invisible Item Frames",
     "carpet.rule.obtainableInvisibleItemFrames.desc": "Makes invisible item frames obtainable by renaming them to \"invisible\" in an anvil",
+    "carpet.rule.disableOpsBypassWhitelist.name": "Disable Ops Bypass Whitelist",
+    "carpet.rule.disableOpsBypassWhitelist.desc": "Prevents opped players from bypassing the whitelist",
     "commands.importstatstoscoreboard.importing": "There is an ongoing importing procedure.",
     "commands.importstatstoscoreboard.success": "Started importing stats into objectives..."
 }

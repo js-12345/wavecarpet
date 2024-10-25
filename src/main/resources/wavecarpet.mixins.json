@@ -10,6 +10,7 @@
         "command.player.loadItems.PlayerCommandMixin",
         "command.player.loadItems.ServerPlayerMixin",
         "feats.suppressionCount.PacketUtilsMixin",
+        "rule.disableOpsBypassWhitelist.DedicatedPlayerListMixin",
         "rule.obtainableInvisibleItemFrames.AnvilMenuMixin",
         "rule.obtainableInvisibleItemFrames.HangingEntityItemAccessor",
         "rule.obtainableInvisibleItemFrames.ItemFrameMixin",
