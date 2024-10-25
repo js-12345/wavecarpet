@@ -26,6 +26,7 @@ import org.spongepowered.asm.mixin.injection.Slice;
 public class AnvilMenuMixin {
 	@Shadow private @Nullable String itemName;
 
+	@SuppressWarnings("unchecked")
 	@WrapOperation(
 		method = "createResult",
 		slice = @Slice(
@@ -52,7 +53,6 @@ public class AnvilMenuMixin {
 			));
 			data.put("Invisible", ByteTag.ONE);
 			stack.set(DataComponents.ENTITY_DATA, CustomData.of(data));
-			//noinspection unchecked
 			value = (T) Component.literal("Invisible " + item.getDescription().getString())
 					.setStyle(Style.EMPTY.withItalic(false));
 		}
