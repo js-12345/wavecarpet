@@ -2,5 +2,9 @@
     "carpet.category.WaveTech": "WaveTech",
 
     "carpet.rule.stopLightRecalculationDataFix.name": "Stop Light Recalculation DataFix",
-    "carpet.rule.stopLightRecalculationDataFix.desc": "Prevents the ChunkDeleteLightFix DataFix from erasing the light data out of <=1.19.4 chunks"
+    "carpet.rule.stopLightRecalculationDataFix.desc": "Prevents the ChunkDeleteLightFix DataFix from erasing the light data out of <=1.19.4 chunks",
+    "carpet.rule.commandImportStatsToScoreboard.desc": "Enables /importstatstoscoreboard command",
+    "carpet.rule.commandImportStatsToScoreboard.extra.0": "Imports player statistics into scoreboard objectives",
+    "commands.importstatstoscoreboard.importing": "There is an ongoing importing procedure.",
+    "commands.importstatstoscoreboard.success": "Started importing stats into objectives..."
 }

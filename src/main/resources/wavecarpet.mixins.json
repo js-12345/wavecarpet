@@ -4,6 +4,8 @@
     "package": "me.wavetech.wavecarpet.mixins",
     "compatibilityLevel": "JAVA_21",
     "mixins": [
+        "command.CommandsMixin",
+        "command.importStatsToScoreboard.StatsCounterAccessor",
         "command.player.loadItems.EntityPlayerActionPackMixin",
         "command.player.loadItems.PlayerCommandMixin",
         "command.player.loadItems.ServerPlayerMixin",

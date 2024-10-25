@@ -2,10 +2,15 @@ package me.wavetech.wavecarpet;
 
 import carpet.api.settings.Rule;
 
+import static carpet.api.settings.RuleCategory.*;
+
 @SuppressWarnings("unused")
 public class WaveCarpetSettings {
 	public static final String WAVETECH = "WaveTech";
 
 	@Rule(categories = { WAVETECH })
 	public static boolean stopLightRecalculationDataFix = false;
+
+	@Rule(categories = { WAVETECH, SURVIVAL, COMMAND }, options = { "true", "false", "ops", "0", "1", "2", "3", "4" })
+	public static String commandImportStatsToScoreboard = "ops";
 }

@@ -7,6 +7,8 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import net.fabricmc.api.ModInitializer;
 import org.apache.commons.io.IOUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -15,6 +17,8 @@ import java.util.Collections;
 import java.util.Map;
 
 public class WaveCarpetMod implements ModInitializer, CarpetExtension {
+	public static final Logger LOGGER = LoggerFactory.getLogger("wavecarpet");
+
 	@Override
 	public void onInitialize() {
 		CarpetServer.manageExtension(new WaveCarpetMod());
