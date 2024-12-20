@@ -6,6 +6,8 @@ import net.minecraft.network.PacketListener;
 import net.minecraft.network.protocol.PacketUtils;
 import net.minecraft.server.network.ServerGamePacketListenerImpl;
 import net.minecraft.world.scores.Score;
+import net.minecraft.world.scores.ScoreAccess;
+import net.minecraft.world.scores.ScoreHolder;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -17,7 +19,7 @@ public class PacketUtilsMixin {
 	private static void countSuppression(CallbackInfo ci, @Local(argsOnly = true) PacketListener packetListener) {
 		if (packetListener instanceof ServerGamePacketListenerImpl gamePL) {
 			gamePL.player.server.getScoreboard()
-				.forAllObjectives(ObjectiveCriteriaRegistry.SUPPRESSION_COUNT, gamePL.player.getScoreboardName(), Score::increment);
+				.forAllObjectives(ObjectiveCriteriaRegistry.SUPPRESSION_COUNT, ScoreHolder.forNameOnly(gamePL.player.getScoreboardName()), ScoreAccess::increment);
 		}
 	}
 }
